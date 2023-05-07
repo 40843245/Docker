@@ -24,5 +24,11 @@ The default path defined in apach2.conf is
     /var/www/html
     
 ### Default path for url
-In apache2 server
+Suppose that you use <b>apache2 server</b> in <b>Docker</b>.
+
+If you want to visit the webpage, 
+
+then you should enter the following url in the url search box.
+
+http://<host>[::<port>][/<path>[#<fragment>]]
 
