@@ -1,6 +1,14 @@
 # phpmyadmin
 # intro
-phpmyadmin is a server to manage mysql database.
+phpmyadmin is a system to manage mysql database using apache2 server.
+
+NOTE that 
+
+<b>phpmyadmin is NOT a server!!!</b>
+
+<b>phpmyadmin is NOT a server!!!</b>
+
+<b>phpmyadmin is NOT a server!!!</b>
 
 ## Default path
 ### Default path for file
@@ -11,7 +19,10 @@ It is defined in the configuration file.
       
 https://askubuntu.com/questions/193465/setting-path-for-apache
 
-The default path of setting is 
+The default path defined in apach2.conf is 
 
     /var/www/html
+    
+### Default path for url
+In apache2 server
 
