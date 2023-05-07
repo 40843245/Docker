@@ -30,5 +30,5 @@ If you want to visit the webpage,
 
 then you should enter the following url in the url search box.
 
-http://<host>[::<port>][/<path>[#<fragment>]]
+     http://<host>[::<port>][/<path>[#<fragment>]]
 
