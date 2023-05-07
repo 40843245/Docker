@@ -4,7 +4,7 @@ phpmyadmin is a system to manage mysql database using apache2 server.
 
 NOTE that 
 
-<p><b>phpmyadmin is NOT a server!!!</b></p>
+<p style='color:red;'><b>phpmyadmin is NOT a server!!!</b></p>
 
 <b>phpmyadmin is NOT a server!!!</b>
 
