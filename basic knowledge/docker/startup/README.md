@@ -14,28 +14,41 @@ Now, I want to upload a folder name "nfu" to the Docker container.
 First, I have to change directory by CD command.
 Then, I have to type these command on DOS cmd prompt (NOT on Docker's cmd prompt).
 
-docker cp "nfu" "0e1066ed12fc:/var/www/html"
+    docker cp "nfu" "0e1066ed12fc:/var/www/html"
 
-NOTICE that 
+If successful, you will look the message for success which looks like this.
+
+![image](https://github.com/40843245/Docker/assets/75050655/b3d971af-21fb-475e-9aff-852edf41df1d)
+
+NOTICE:
 1. The destionation path (i.e. the path of file or file in Docker container) must start with Docker container's id. Can NOT start with Docker container's name.
 2. The ':' symbol must be followed by the Docker container's id. It's syntax.
 3. After ':' symbol, 'var/www/html/' must be followed.
 4. There are two different syntax. For more, see official Docs or my notes "docker/cp.md" at Github.
 
+Syntax about docker cp:
 Conclude 1th to 4th points, there are two different syntax.
 
-    docker cp "<src_path>" "<dest_path>"
+    docker [compose] cp "<src_path>" "<dest_path>"
 
 or
 
-    docker cp "<dest_path>" "<src_path>"
+    docker [compose] cp "<dest_path>" "<src_path>"
 
-Here
+where
 
     <src_path> :=
         The source path that contains the file that will be uploaded, or the file that will be upload.
         It can be either a folder or a file.
-    
+
+    <dest_path> := <container_id>:<docker_container_path>
+
+Here, if one want to see the result of uploaded file, then it must be located under the directory '/var/www/html' by default (one can set it in configure file about phpmyadmin). Thus, by default 
+
+    <dest_path> := <container_id>:<docker_container_path>
+
+can be simply rewritten as 
+
     <dest_path> := <container_id>:/var/www/html/<rest_dest_path>
 
     <container_id> := 
@@ -43,7 +56,12 @@ Here
 
     <rest_dest_path> :=
           Any directory that you want to upload to. It can NOT be a file name. It only can be a folder.
-          
+
+#### Ref
+For more details, see Official Docs
+
+https://docs.docker.com/reference/cli/docker/container/cp/
+
 ### url that links to file on Docker container
 Let's continue the example.
 
