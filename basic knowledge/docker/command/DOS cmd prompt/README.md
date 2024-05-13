@@ -72,6 +72,49 @@ From Official Docs,
 
 https://docs.docker.com/reference/cli/docker/image/build/
 
+## docker image ls
+List images.
+
+## docker image list
+Alias as 
+
+    docker image ls
+## docker images
+Alias as 
+
+    docker image ls
+
+### Ref
+From Official docs,
+
+https://docs.docker.com/reference/cli/docker/image/ls/
+
+## docker image pull
+Download an image from registry.
+
+## docker pull
+Alias as
+
+    docker image pull
+    
+### Ref
+From Official docs,
+
+https://docs.docker.com/reference/cli/docker/image/pull/
+
+## docker image push
+Upload an image to registry.
+
+## docker push
+Alias as
+
+    docker image push
+    
+### Ref
+From Official docs,
+
+https://docs.docker.com/reference/cli/docker/image/push/
+
 ## docker image history
 Show history of images.
 
@@ -85,4 +128,10 @@ From Official docs,
 
 https://docs.docker.com/reference/cli/docker/image/history/
 
+## docker version
+Show current version of docker.
 
+### Ref
+From Official docs,
+
+https://docs.docker.com/reference/cli/docker/version/
